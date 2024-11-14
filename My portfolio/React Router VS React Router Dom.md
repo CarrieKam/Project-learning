@@ -8,12 +8,12 @@ The three main packages related to React Router are:
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom "react-router-dom NPM package"): Includes everything in **react-router** and adds a few DOM-specific APIs.
 - [react-router-native](https://www.npmjs.com/package/react-router-native "react-router-native NPM package"): Includes everything in **react-router** and adds a few React Native-specific APIs.
 
-## React Router DOM
+## [[React Router Dom]]
 - dynamic routing in web applications
 - supports component-based routing, which is the ideal solution for routing if the React application is running on the browser
 
 
-## ### When to Use Which
+## When to Use Which
 If you are working on a web application, the better option is to use **react-router-dom**, because it contains all the necessary common components and features essential for routing in a web application. **react-router-dom** installs **react-router** as a dependency, so there is no need to re-install and import anything directly from the **react-router**.
 
 Even on mobile applications with React Native, **react-router-native** is enough, for the same reason as **react-router-dom** is enough in web apps.
