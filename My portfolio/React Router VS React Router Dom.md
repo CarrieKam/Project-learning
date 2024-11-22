@@ -20,6 +20,7 @@ Even on mobile applications with React Native, **react-router-native** is enou
 
 Because of that, there is no need to import the **react-router** package directly anywhere, as **react-router-dom** and **react-router-native** provide all the required functionalities.
 
--------------
+----
 Sources:
-- https://www.syncfusion.com/blogs/post/react-router-vs-react-router-dom
+- https://www.syncfusion.com/blogs/post/react-router-vs-react-router-dom|
+
