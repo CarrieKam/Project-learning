@@ -1,4 +1,6 @@
-# Theme color toggle
+# Theme color toggle ()
+#react  #tailwind #javascript
+
 ```jsx
 // ✅ Valid: String interpolation in className
 className={`base-class ${condition ? 'class-a' : 'class-b'}`}
@@ -46,3 +48,31 @@ This works because:
 - The ternary is directly in the JSX, not inside a className
 - It returns React components, not strings
 - Used for rendering components, not setting class names
+
+---------------
+# React can't have img string without import
+#react #vite
+
+In React, when using build tools like Vite or Create React app, you need to handle static assets like images differently than with regular HTML
+
+## What you can do
+1. Create a public folder and put all the picture there
+2. Put this code:
+```javascript 
+useEffect(() => {
+    // Import all images from the projects directory
+    const images = import.meta.glob('../assets/projects/*.{png,jpg,jpeg,svg}', { eager: true });
+    
+    // Map over projects and replace image paths with actual imports
+    const projectsWithImages = data.projects.project.map(project => {
+      const imageName = project.imagePath.split('/').pop(); 
+      const imagePath = imageName ? Object.entries(images).find(([path]) => path.includes(imageName)) : undefined;
+      
+      return {
+        ...project,
+        imagePath: imagePath ? (imagePath[1] as { default: string }).default : project.imagePath
+      };
+    });
+```
+
+
