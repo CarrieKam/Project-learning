@@ -1,5 +1,5 @@
 # Theme color toggle ()
-#react  #tailwind #javascript
+#React  #tailwind #javascript
 
 ```jsx
 // ✅ Valid: String interpolation in className
@@ -61,6 +61,7 @@ In React, when using build tools like Vite or Create React app, you need to hand
 ```javascript 
 useEffect(() => {
     // Import all images from the projects directory
+					// it's a Vite feature
     const images = import.meta.glob('../assets/projects/*.{png,jpg,jpeg,svg}', { eager: true });
     
     // Map over projects and replace image paths with actual imports
